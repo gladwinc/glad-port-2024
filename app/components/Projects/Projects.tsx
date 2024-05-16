@@ -4,16 +4,12 @@ import {
   Paper,
   Container,
   Text,
-  Card,
-  SimpleGrid,
   Image,
   Badge,
   Group,
-  Stack,
   Accordion,
   Button,
   Indicator,
-  Avatar,
 } from "@mantine/core";
 import {
   FaGithub,

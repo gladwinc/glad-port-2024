@@ -20,7 +20,7 @@ const About = () => {
         About Me
       </Text> */}
 
-      <SimpleGrid cols={2} spacing="xl">
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
         <div>
           <div>
             <Paper withBorder radius="lg" p={20} mb={20}>
