@@ -7,7 +7,7 @@ import {
   Button,
   Group,
   Avatar,
-  Paper,
+  Anchor,
 } from "@mantine/core";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
@@ -73,6 +73,14 @@ const Welcome = () => {
             <Text fz="lg" fw={500}>
               I am a developer who likes to build web applications with
               performance and user experience in mind.{" "}
+              <Anchor
+                href="/about"
+                variant="gradient"
+                gradient={{ from: "#07c8f9", to: "#0d41e1" }}
+                fz="lg"
+                fw={600}>
+                More about me.
+              </Anchor>
             </Text>
           </div>
         </Group>
