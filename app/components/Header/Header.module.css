@@ -5,5 +5,12 @@
   width: 100%;
   z-index: 999;
   height: 80px;
-  background-color: white;
+
+  @mixin light {
+    background-color: white;
+  }
+
+  @mixin dark {
+    background-color: var(--mantine-color-dark-7);
+  }
 }

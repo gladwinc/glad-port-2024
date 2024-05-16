@@ -15,7 +15,7 @@ import { FaMicroscope, FaGraduationCap, FaBook } from "react-icons/fa";
 import { FaGear, FaFileCode } from "react-icons/fa6";
 const About = () => {
   return (
-    <Container size={900} pt={80} pb={80} mt={50}>
+    <Container pt={80} pb={80} mt={50}>
       {/*  <Text ta="center" size="40px" fw={700} mb={30}>
         About Me
       </Text> */}
