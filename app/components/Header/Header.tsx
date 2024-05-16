@@ -43,11 +43,22 @@ const Header = () => {
     </UnstyledButton>
   ));
 
+  const handleImageClick = () => {
+    window.location.href = "/";
+  };
+
   return (
     <header className={classes.header}>
       <Container size="md" mt={30} className={classes.inner}>
         <div className={classes.left}>
-          <Image src="/gladwin_name.png" h={60} alt="Gladwin" hiddenFrom="xs" />
+          <Image
+            src="/gladwin_name.png"
+            h={60}
+            alt="Gladwin"
+            hiddenFrom="xs"
+            onClick={handleImageClick}
+            style={{ cursor: "pointer" }}
+          />
         </div>
         <div className={classes.center}>
           <Group gap={40} visibleFrom="xs">

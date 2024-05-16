@@ -15,7 +15,7 @@ import { FaMicroscope, FaGraduationCap, FaBook } from "react-icons/fa";
 import { FaGear, FaFileCode } from "react-icons/fa6";
 const About = () => {
   return (
-    <Container pt={80} pb={80} mt={10}>
+    <Container pt={80} pb={60} mt={20}>
       {/*  <Text ta="center" size="40px" fw={700} mb={30}>
         About Me
       </Text> */}
@@ -30,7 +30,7 @@ const About = () => {
             </Paper>
           </div>
           <div>
-            <Paper withBorder radius="lg" p={40} mb={40}>
+            <Paper withBorder radius="lg" p={40} mb={20}>
               <Highlight mb={20} fw={700} highlight="About me.">
                 About me.
               </Highlight>
