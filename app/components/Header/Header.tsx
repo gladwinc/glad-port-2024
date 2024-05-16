@@ -68,7 +68,13 @@ const Header = () => {
             </ActionIcon>
           </Group>
         </div>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <Burger
+          opened={opened}
+          onClick={toggle}
+          pb={10}
+          hiddenFrom="xs"
+          size="sm"
+        />
       </Container>
       <Drawer opened={opened} onClose={toggle} size="100%">
         <Stack pl={10} mt={50}>

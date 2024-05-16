@@ -131,7 +131,7 @@ const Projects = () => {
   ));
 
   return (
-    <Container size="md" mb={100} pt={80} id="projects">
+    <Container size="md" mb={100} pt={100} id="projects">
       <Paper withBorder radius="xl" p={40} mb={10}>
         <Text ta="center" fw={700} size="40px">
           Projects

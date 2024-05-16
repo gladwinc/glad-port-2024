@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  height: 80px;
+  height: 90px;
 
   @mixin light {
     background-color: white;
