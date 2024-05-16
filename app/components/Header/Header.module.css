@@ -14,3 +14,20 @@
     background-color: var(--mantine-color-dark-7);
   }
 }
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
