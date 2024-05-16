@@ -5,8 +5,8 @@ import { theme } from "../theme";
 import Header from "./components/Header/Header";
 
 export const metadata = {
-  title: "Gladwin Chan",
-  description: "I am using Mantine with Next.js!",
+  title: "glad",
+  description: "gladwin's portfolio",
 };
 
 export default function RootLayout({ children }: { children: any }) {
