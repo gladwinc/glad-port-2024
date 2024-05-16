@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react";
 import {
   UnstyledButton,
   Group,
@@ -43,6 +43,7 @@ const Header = () => {
     </UnstyledButton>
   ));
 
+  const [isHovered, setIsHovered] = useState(false);
   const handleImageClick = () => {
     window.location.href = "/";
   };
@@ -57,7 +58,13 @@ const Header = () => {
             alt="Gladwin"
             hiddenFrom="xs"
             onClick={handleImageClick}
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              transition: "transform 250ms",
+              transform: isHovered ? "scale(1.03)" : "scale(1)",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
         </div>
         <div className={classes.center}>
