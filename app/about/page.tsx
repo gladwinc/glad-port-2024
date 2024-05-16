@@ -38,19 +38,27 @@ const About = () => {
                 <Avatar variant="default" radius="xl" size="md">
                   <MdWavingHand size={16} />
                 </Avatar>
-                <Text fz="lg" fw={500} mb={20}>
+                <Highlight
+                  fz="lg"
+                  fw={500}
+                  mb={20}
+                  highlight="Hello, I'm Gladwin">
                   Hello, I'm Gladwin , a computer programming & analytics
                   student.
-                </Text>
+                </Highlight>
               </Group>
               <Group wrap="nowrap">
                 <Avatar variant="default" radius="xl" size="md">
                   <FaMicroscope size={16} />
                 </Avatar>
-                <Text fz="lg" fw={500} mb={20}>
+                <Highlight
+                  fz="lg"
+                  fw={500}
+                  mb={20}
+                  highlight="medical laboratory technologist">
                   I come from a healthcare background, working as a medical
                   laboratory technologist.
-                </Text>
+                </Highlight>
               </Group>
               <Group wrap="nowrap">
                 <Avatar variant="default" radius="xl" size="md">
@@ -171,40 +179,51 @@ const About = () => {
                 <Avatar variant="default" radius="xl" size="md">
                   <FaGraduationCap size={18} />
                 </Avatar>
-                <Text fz="lg" fw={500} mb={20}>
+                <Highlight fz="lg" fw={500} mb={20} highlight="Bsc.">
                   I graduated from the University of Waterloo with a Bachelor of
-                  Science in Biomedical Sciences, then earned an Advanced
+                  Science (BSc.) in Biomedical Sciences, then earned an Advanced
                   Diploma in Laboratory Science at the Michener Institute.
-                </Text>
+                </Highlight>
               </Group>
               <Group wrap="nowrap">
                 <Avatar variant="default" radius="xl" size="md">
                   <FaFileCode size={15} />
                 </Avatar>
-                <Text fz="lg" fw={500} mb={20}>
+                <Highlight
+                  fz="lg"
+                  fw={500}
+                  mb={20}
+                  highlight="Computer Programming and Analysis">
                   I am now continuing my education at Seneca Polytechnic for
                   Computer Programming and Analysis.
-                </Text>
+                </Highlight>
               </Group>
               <Group wrap="nowrap">
                 <Avatar variant="default" radius="xl" size="md">
                   <FaBook size={13} />
                 </Avatar>
-                <Text fz="lg" fw={500} mb={20}>
+                <Highlight
+                  span
+                  fz="lg"
+                  fw={500}
+                  mb={20}
+                  highlight={
+                    "C/C++, Python, Java, JavaScript, SQL/NoSQL databases, data structures, and algorithms"
+                  }>
                   My coursework covers a wide range of languages and
                   technologies, including C/C++, Python, Java, JavaScript,
                   SQL/NoSQL databases, data structures, and algorithms.
-                </Text>
+                </Highlight>
               </Group>
               <Group wrap="nowrap">
                 <Avatar variant="default" radius="xl" size="md">
                   <FaGear size={14} />
                 </Avatar>
-                <Text fz="lg" fw={500}>
+                <Highlight fz="lg" fw={500} highlight={["React", "Azure"]}>
                   During my first internship with the Government of Ontario, I
                   enhanced their client portal site using React and gained
                   experience with emerging technologies such as Azure.
-                </Text>
+                </Highlight>
               </Group>
             </Paper>
           </div>

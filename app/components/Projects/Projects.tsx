@@ -11,12 +11,7 @@ import {
   Button,
   Indicator,
 } from "@mantine/core";
-import {
-  FaGithub,
-  FaSpotify,
-  FaBasketballBall,
-  FaDatabase,
-} from "react-icons/fa";
+import { FaGithub, FaSpotify, FaDatabase } from "react-icons/fa";
 import { MdPointOfSale, MdMuseum } from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 import { IconArrowRight } from "@tabler/icons-react";
