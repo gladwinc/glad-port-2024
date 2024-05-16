@@ -84,13 +84,11 @@ const Header = () => {
               setColorScheme(computedColorScheme === "light" ? "dark" : "light")
             }
             variant="transparent"
-            size="xl"
-            aria-label="Toggle color scheme"
-            pr={20}>
+            aria-label="Toggle color scheme">
             {computedColorScheme === "dark" ? (
-              <IconSun color="orange" stroke={3.5} size={24} />
+              <IconSun color="orange" stroke={3.5} size={40} />
             ) : (
-              <IconMoon stroke={3.5} size={24} />
+              <IconMoon stroke={3.5} size={40} />
             )}
           </ActionIcon>
         </Stack>
