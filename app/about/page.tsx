@@ -20,7 +20,7 @@ const About = () => {
         About Me
       </Text> */}
 
-      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
         <div>
           <div>
             <Paper withBorder radius="lg" p={20} mb={20}>
@@ -123,7 +123,7 @@ const About = () => {
 
         <div>
           <div>
-            <Paper withBorder radius="lg" p={40} mb={40}>
+            <Paper withBorder radius="lg" p={40} mb={20}>
               <Timeline bulletSize={27} fz="lg">
                 <Timeline.Item
                   bullet={<Avatar src="/gov_on.png" size={35} />}
