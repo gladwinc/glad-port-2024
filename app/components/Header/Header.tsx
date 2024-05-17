@@ -54,7 +54,7 @@ const Header = () => {
         <div className={classes.left}>
           <Image
             src="/gladwin_name.png"
-            h={60}
+            h={54}
             alt="Gladwin"
             hiddenFrom="xs"
             onClick={handleImageClick}
