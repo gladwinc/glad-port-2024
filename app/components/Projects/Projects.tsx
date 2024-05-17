@@ -64,7 +64,7 @@ const projectData = [
     title: "Point-of-Sale Application",
     description:
       "A C++ Point-of-Sale Application to manage inventory and sales.",
-    image: "/proj4.png",
+    image: "/ok1234.png",
     github: "https://github.com/gladwinc/POS-system",
     tags: ["C++"],
     icon: <MdPointOfSale size={24} />,
