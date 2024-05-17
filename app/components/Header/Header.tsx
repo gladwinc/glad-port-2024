@@ -54,7 +54,7 @@ const Header = () => {
         <div className={classes.left}>
           <Image
             src="/gladwin_name.png"
-            h={54}
+            h={56}
             alt="Gladwin"
             hiddenFrom="xs"
             onClick={handleImageClick}
@@ -86,13 +86,7 @@ const Header = () => {
             </ActionIcon>
           </Group>
         </div>
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          pb={10}
-          hiddenFrom="xs"
-          size="sm"
-        />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
       <Drawer opened={opened} onClose={toggle} size="100%">
         <Stack pl={10} mt={50}>
