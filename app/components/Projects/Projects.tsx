@@ -21,7 +21,7 @@ const projectData = [
     title: "What's Playing? A Spotify Explorer",
     description:
       "A web application that allows you to explore your Spotify listening history, including your top artists and tracks.",
-    image: "/ss11.png",
+    image: "/proj1.png",
     github: "https://github.com/gladwinc/spotifyappv1",
     link: "https://spotifyappv1.vercel.app/login",
     tags: [
@@ -38,7 +38,7 @@ const projectData = [
     title: "MET Museum Explorer",
     description:
       "A Next.js web application that allows you to explore the MET Museum's collection of art.",
-    image: "/ss22.png",
+    image: "/proj2.png",
     github: "https://github.com/gladwinc/MET_Explorer",
     link: "https://met-explorer-lilac.vercel.app/",
     tags: [
@@ -55,7 +55,7 @@ const projectData = [
     title: "Sports Tournament Database",
     description:
       "An SQL-based DBMS designed for managing sports tournaments. This project includes ERD design, data modeling, and SQL schema.",
-    image: "/ss3.png",
+    image: "/proj3.png",
     github: "https://github.com/gladwinc/database-tournament",
     tags: ["SQL", "Oracle", "Draw.io"],
     icon: <FaDatabase size={24} />,
@@ -64,7 +64,7 @@ const projectData = [
     title: "Point-of-Sale Application",
     description:
       "A C++ Point-of-Sale Application to manage inventory and sales.",
-    image: "/snap4.png",
+    image: "/proj4.png",
     github: "https://github.com/gladwinc/POS-system",
     tags: ["C++"],
     icon: <MdPointOfSale size={24} />,
@@ -131,7 +131,7 @@ const Projects = () => {
   ));
 
   return (
-    <Container size="md" mb={100} pt={100} id="projects">
+    <Container size="md" mb={60} pt={100} id="projects">
       <Paper withBorder radius="xl" p={40} mb={15}>
         <Text ta="center" fw={700} size="40px">
           Projects
@@ -151,7 +151,7 @@ const Projects = () => {
         radius="xl"
         size="lg"
         rightSection={<IconArrowRight />}
-        mt={20}>
+        mt={15}>
         <Text pt={5}>
           <FaGithub size={23} />
         </Text>
