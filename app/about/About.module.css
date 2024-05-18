@@ -11,3 +11,10 @@
   background-size: cover;
   color: light-dark(inherit, var(--mantine-color-black));
 }
+
+.paper {
+  background-color: light-dark(
+    var(--mantine-color-gray-0),
+    var(--mantine-color-dark-6)
+  );
+}

@@ -17,21 +17,18 @@ import classes from "./About.module.css";
 const About = () => {
   return (
     <Container pt={80} pb={60} mt={20}>
-      {/*  <Text ta="center" size="40px" fw={700} mb={30}>
-        About Me
-      </Text> */}
+      <div>
+        <Paper radius="lg" p={20} mb={20}>
+          <Text ta="center" fw={700} fz="40px">
+            <span className={classes.highlight}>About</span>
+          </Text>
+        </Paper>
+      </div>
 
-      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
         <div>
           <div>
-            <Paper withBorder radius="lg" p={20} mb={20}>
-              <Text ta="center" fw={700} fz="35px">
-                <span className={classes.highlight}>About</span>
-              </Text>
-            </Paper>
-          </div>
-          <div>
-            <Paper withBorder radius="lg" p={40} mb={20}>
+            <Paper radius="lg" p={40} mb={30} className={classes.paper}>
               <Highlight mb={20} fw={700} highlight="About me.">
                 About me.
               </Highlight>
@@ -74,7 +71,7 @@ const About = () => {
             </Paper>
           </div>
           <div>
-            <Paper withBorder radius="lg" p={40}>
+            <Paper radius="lg" p={40} className={classes.paper}>
               <Timeline bulletSize={27} fz="lg" fw={500}>
                 <Timeline.Item
                   bullet={<Avatar src="/s2_logo.png" size={37} />}
@@ -124,7 +121,7 @@ const About = () => {
 
         <div>
           <div>
-            <Paper withBorder radius="lg" p={40} mb={20}>
+            <Paper radius="lg" p={40} mb={30} className={classes.paper}>
               <Timeline bulletSize={27} fz="lg">
                 <Timeline.Item
                   bullet={<Avatar src="/gov_on.png" size={35} />}
@@ -169,7 +166,7 @@ const About = () => {
             </Paper>
           </div>
           <div>
-            <Paper withBorder radius="lg" p={40}>
+            <Paper radius="lg" p={40} className={classes.paper}>
               <Highlight
                 mb={20}
                 fw={700}
