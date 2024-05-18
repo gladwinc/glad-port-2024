@@ -13,6 +13,7 @@ import {
 import { MdWavingHand, MdScience } from "react-icons/md";
 import { FaMicroscope, FaGraduationCap, FaBook } from "react-icons/fa";
 import { FaGear, FaFileCode } from "react-icons/fa6";
+import classes from "./About.module.css";
 const About = () => {
   return (
     <Container pt={80} pb={60} mt={20}>
@@ -25,7 +26,7 @@ const About = () => {
           <div>
             <Paper withBorder radius="lg" p={20} mb={20}>
               <Text ta="center" fw={700} fz="35px">
-                About
+                <span className={classes.highlight}>About</span>
               </Text>
             </Paper>
           </div>
@@ -43,7 +44,7 @@ const About = () => {
                   fw={500}
                   mb={20}
                   highlight="Hello, I'm Gladwin">
-                  Hello, I'm Gladwin , a computer programming & analytics
+                  Hello, I'm Gladwin , a computer programming & analysis
                   student.
                 </Highlight>
               </Group>
@@ -55,7 +56,7 @@ const About = () => {
                   fz="lg"
                   fw={500}
                   mb={20}
-                  highlight="medical laboratory technologist">
+                  highlight="medical laboratory technologist.">
                   I come from a healthcare background, working as a medical
                   laboratory technologist.
                 </Highlight>
@@ -207,9 +208,7 @@ const About = () => {
                   fz="lg"
                   fw={500}
                   mb={20}
-                  highlight={
-                    "C/C++, Python, Java, JavaScript, SQL/NoSQL databases, data structures, and algorithms"
-                  }>
+                  highlight="C/C++, Python, Java, JavaScript, SQL/NoSQL databases, data structures, and algorithms">
                   My coursework covers a wide range of languages and
                   technologies, including C/C++, Python, Java, JavaScript,
                   SQL/NoSQL databases, data structures, and algorithms.

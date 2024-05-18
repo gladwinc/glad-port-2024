@@ -15,6 +15,7 @@ import { FaGithub, FaSpotify, FaDatabase } from "react-icons/fa";
 import { MdPointOfSale, MdMuseum } from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 import { IconArrowRight } from "@tabler/icons-react";
+import classes from "./Projects.module.css";
 
 const projectData = [
   {
@@ -127,7 +128,7 @@ const Projects = () => {
     <Container size="md" mb={60} pt={100} id="projects">
       <Paper withBorder radius="xl" p={40} mb={15}>
         <Text ta="center" fw={700} size="40px">
-          Projects
+          <span className={classes.highlight}>Projects</span>
         </Text>
       </Paper>
       <Accordion variant="separated" radius="xl">
