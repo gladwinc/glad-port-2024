@@ -33,7 +33,7 @@ const projectData = [
       "Bootstrap",
       "OAuth2",
     ],
-    icon: <FaSpotify size={24} />,
+    icon: <FaSpotify size={35} />,
   },
   {
     title: "MET Museum Explorer",
@@ -43,7 +43,7 @@ const projectData = [
     github: "https://github.com/gladwinc/MET_Explorer",
     link: "https://met-explorer-lilac.vercel.app/",
     tags: ["React", "Next.js", "Met Museum API", "JavaScript", "Bootstrap"],
-    icon: <MdMuseum size={24} />,
+    icon: <MdMuseum size={35} />,
   },
   {
     title: "Sports Tournament Database",
@@ -52,7 +52,7 @@ const projectData = [
     image: "/proj3.png",
     github: "https://github.com/gladwinc/database-tournament",
     tags: ["SQL", "Oracle", "Draw.io"],
-    icon: <FaDatabase size={24} />,
+    icon: <FaDatabase size={30} />,
   },
   {
     title: "Point-of-Sale Application",
@@ -61,7 +61,7 @@ const projectData = [
     image: "/proj4.png",
     github: "https://github.com/gladwinc/POS-system",
     tags: ["C++"],
-    icon: <MdPointOfSale size={24} />,
+    icon: <MdPointOfSale size={30} />,
   },
 ];
 
@@ -69,11 +69,13 @@ const Projects = () => {
   const projects = projectData.map((project) => (
     <Accordion.Item key={project.title} value={project.title}>
       <Accordion.Control pl={40} pr={40} pt={20} pb={20}>
-        <Group>
-          <Text mb={3}>{project.icon}</Text>
-          <Text size="xl" fw={700} mb={10}>
-            {project.title}
-          </Text>
+        <Group wrap="nowrap">
+          <Text mb={6}>{project.icon}</Text>
+          <div>
+            <Text size="xl" fw={700} mb={10}>
+              {project.title}
+            </Text>
+          </div>
         </Group>
         <Text size="lg" mb={15}>
           {project.description}

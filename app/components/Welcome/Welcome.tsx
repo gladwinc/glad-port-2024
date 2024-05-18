@@ -11,6 +11,10 @@ import {
 } from "@mantine/core";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import { Fredoka } from "next/font/google";
+import classes from "./Welcome.module.css";
+
+const fredoka = Fredoka({ subsets: ["latin"] });
 
 const Welcome = () => {
   return (
@@ -22,8 +26,13 @@ const Welcome = () => {
           </Badge>
         </Indicator>
       </Center>
-      <Text ta="center" fw={900} size="55px" mt={50}>
-        Gladwin Chan
+      <Text
+        ta="center"
+        fw={700}
+        size="75px"
+        mt={50}
+        style={{ fontFamily: fredoka.style.fontFamily }}>
+        <span className={classes.name}>Gladwin Chan</span>
       </Text>
       <Group justify="center" mt={50}>
         <Button
