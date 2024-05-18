@@ -41,14 +41,7 @@ const projectData = [
     image: "/proj2.png",
     github: "https://github.com/gladwinc/MET_Explorer",
     link: "https://met-explorer-lilac.vercel.app/",
-    tags: [
-      "React",
-      "Next.js",
-      "Met Museum API",
-      "JavaScript",
-      "Bootstrap",
-      "OAuth2",
-    ],
+    tags: ["React", "Next.js", "Met Museum API", "JavaScript", "Bootstrap"],
     icon: <MdMuseum size={24} />,
   },
   {
