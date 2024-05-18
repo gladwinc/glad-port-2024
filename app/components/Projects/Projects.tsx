@@ -126,7 +126,7 @@ const Projects = () => {
 
   return (
     <Container size="md" mb={60} pt={100} id="projects">
-      <Paper withBorder radius="xl" p={40} mb={15}>
+      <Paper radius="xl" p={40} mb={15}>
         <Text ta="center" fw={700} size="40px">
           <span className={classes.highlight}>Projects</span>
         </Text>
