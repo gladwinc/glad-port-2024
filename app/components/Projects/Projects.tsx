@@ -77,7 +77,7 @@ const Projects = () => {
             </Text>
           </div>
         </Group>
-        <Text size="lg" mb={15}>
+        <Text size="lg" fw={500} c="dimmed" mb={15}>
           {project.description}
         </Text>
         {project.tags && (
