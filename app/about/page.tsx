@@ -12,8 +12,13 @@ import {
   Indicator,
 } from "@mantine/core";
 import { MdWavingHand, MdScience } from "react-icons/md";
-import { FaMicroscope, FaGraduationCap, FaBook } from "react-icons/fa";
-import { FaGear, FaFileCode } from "react-icons/fa6";
+import {
+  FaMicroscope,
+  FaGraduationCap,
+  FaBook,
+  FaSchool,
+} from "react-icons/fa";
+import { FaUserGear, FaBookOpenReader } from "react-icons/fa6";
 import classes from "./About.module.css";
 const About = () => {
   return (
@@ -220,7 +225,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaFileCode size={17} />
+                  <FaSchool size={18} />
                 </Avatar>
                 <Highlight
                   fz={18}
@@ -233,7 +238,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaBook size={15} />
+                  <FaBookOpenReader size={17} />
                 </Avatar>
                 <Highlight
                   span
@@ -248,7 +253,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaGear size={17} />
+                  <FaUserGear size={20} />
                 </Avatar>
                 <Highlight fz={18} fw={450} highlight={["React", "Azure"]}>
                   During my first internship with the Government of Ontario, I
