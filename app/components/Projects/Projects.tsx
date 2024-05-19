@@ -72,12 +72,12 @@ const Projects = () => {
         <Group wrap="nowrap">
           <Text mb={6}>{project.icon}</Text>
           <div>
-            <Text size="xl" fw={700} mb={10}>
+            <Text size="xl" lh={1.3} fw={700} mb={10}>
               {project.title}
             </Text>
           </div>
         </Group>
-        <Text size="lg" fw={500} c="dimmed" mb={15}>
+        <Text size="lg" fw={450} c="dimmed" mb={15}>
           {project.description}
         </Text>
         {project.tags && (
