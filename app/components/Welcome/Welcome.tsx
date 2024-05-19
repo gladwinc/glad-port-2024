@@ -88,7 +88,7 @@ const Welcome = () => {
                 gradient={{ from: "#07c8f9", to: "#0d41e1" }}
                 fz="lg"
                 fw={600}>
-                More about me.
+                More about me...
               </Anchor>
             </Text>
           </div>
