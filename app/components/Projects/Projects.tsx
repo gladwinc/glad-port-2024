@@ -16,6 +16,9 @@ import { MdPointOfSale, MdMuseum } from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 import { IconArrowRight } from "@tabler/icons-react";
 import classes from "./Projects.module.css";
+import { Fredoka } from "next/font/google";
+
+const fredoka = Fredoka({ subsets: ["latin"] });
 
 const projectData = [
   {
@@ -131,8 +134,12 @@ const Projects = () => {
   return (
     <Container size="md" mb={60} pt={100} id="projects">
       <Paper radius="xl" p={40} mb={15}>
-        <Text ta="center" fw={700} size="40px">
-          <span className={classes.highlight}>Projects</span>
+        <Text ta="center" fw={700} size="50px">
+          <span
+            className={classes.highlight}
+            style={{ fontFamily: fredoka.style.fontFamily }}>
+            Projects
+          </span>
         </Text>
       </Paper>
       <Accordion variant="separated" radius="xl">

@@ -12,21 +12,24 @@ import {
   Indicator,
 } from "@mantine/core";
 import { MdWavingHand, MdScience } from "react-icons/md";
-import {
-  FaMicroscope,
-  FaGraduationCap,
-  FaBook,
-  FaSchool,
-} from "react-icons/fa";
+import { FaMicroscope, FaGraduationCap, FaSchool } from "react-icons/fa";
 import { FaUserGear, FaBookOpenReader } from "react-icons/fa6";
 import classes from "./About.module.css";
+import { Fredoka } from "next/font/google";
+
+const fredoka = Fredoka({ subsets: ["latin"] });
+
 const About = () => {
   return (
     <Container pt={80} pb={60} mt={20}>
       <div>
         <Paper radius="lg" p={20} mb={20}>
-          <Text ta="center" fw={700} fz="40px">
-            <span className={classes.highlight}>About</span>
+          <Text ta="center" fw={700} fz="50px">
+            <span
+              className={classes.highlight}
+              style={{ fontFamily: fredoka.style.fontFamily }}>
+              About
+            </span>
           </Text>
         </Paper>
       </div>
