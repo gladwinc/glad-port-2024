@@ -34,7 +34,7 @@ const About = () => {
               </Highlight>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <MdWavingHand size={21} />
+                  <MdWavingHand size={18} />
                 </Avatar>
                 <Highlight
                   fz={18}
@@ -46,7 +46,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaMicroscope size={21} />
+                  <FaMicroscope size={18} />
                 </Avatar>
                 <Highlight
                   fz={18}
@@ -59,11 +59,11 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <MdScience size={27} />
+                  <MdScience size={23} />
                 </Avatar>
                 <Text fz={18} fw={450}>
                   I perform lab testing, including routine blood tests, and
-                  specialized procedures for Measles, COVID-19, Bartonella,
+                  specialized procedures for measles, COVID-19, Bartonella,
                   Blastomyces and much more.
                 </Text>
               </Group>
@@ -207,7 +207,7 @@ const About = () => {
               </Highlight>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaGraduationCap size={23} />
+                  <FaGraduationCap size={21} />
                 </Avatar>
                 <Highlight fz={18} fw={450} mb={20} highlight="Bsc.">
                   I graduated from the University of Waterloo with a Bachelor of
@@ -217,7 +217,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaFileCode size={19} />
+                  <FaFileCode size={17} />
                 </Avatar>
                 <Highlight
                   fz={18}
@@ -230,7 +230,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaBook size={16} />
+                  <FaBook size={15} />
                 </Avatar>
                 <Highlight
                   span

@@ -76,7 +76,7 @@ const Welcome = () => {
         <Group wrap="nowrap" justify="center" mt={50}>
           <Avatar radius="lg" size="xxl" src="/glad3.png" />
           <div>
-            <Text tt="uppercase" fz="md" fw={700} c="dimmed" mb={15}>
+            <Text tt="uppercase" fz="md" fw={700} c="dimmed" mb={9}>
               Computer Programming Student
             </Text>
             <Text fz="lg" fw={500}>

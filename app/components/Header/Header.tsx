@@ -13,15 +13,15 @@ import {
   Image,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { FaHome } from "react-icons/fa";
 import classes from "./Header.module.css";
-import { IconSun, IconMoon } from "@tabler/icons-react";
+import { AiTwotoneHome } from "react-icons/ai";
+import { PiSunDimDuotone, PiMoonDuotone } from "react-icons/pi";
 
 const links = [
-  { link: "/", label: <FaHome size={30} /> },
-  { link: "/#projects", label: "projects" },
-  { link: "/about", label: "about" },
-  { link: "mailto:iamgladwin@gmail.com", label: "contact" },
+  /*   { link: "/", label: <AiTwotoneHome size={27} /> },
+   */ { link: "/#projects", label: "Projects" },
+  { link: "/about", label: "About" },
+  { link: "mailto:iamgladwin@gmail.com", label: "Contact" },
 ];
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
       href={link.link}
       key={link.link}
       fz={"lg"}
-      fw={900}
+      fw={800}
       onClick={close}>
       {link.label}
     </UnstyledButton>
@@ -69,8 +69,17 @@ const Header = () => {
         </div>
         <div className={classes.center}>
           <Group gap={40} visibleFrom="xs">
+            <ActionIcon
+              component="a"
+              href="/"
+              size={40}
+              variant="transparent"
+              aria-label="Home">
+              <AiTwotoneHome color="black" size={28} />
+            </ActionIcon>
             {items}
             <ActionIcon
+              size={33}
               onClick={() =>
                 setColorScheme(
                   computedColorScheme === "light" ? "dark" : "light"
@@ -79,9 +88,9 @@ const Header = () => {
               variant="transparent"
               aria-label="Toggle color scheme">
               {computedColorScheme === "dark" ? (
-                <IconSun color="orange" stroke={3.5} size={40} />
+                <PiSunDimDuotone color="orange" size={29} />
               ) : (
-                <IconMoon stroke={3.5} size={40} />
+                <PiMoonDuotone size={29} />
               )}
             </ActionIcon>
           </Group>
@@ -104,9 +113,9 @@ const Header = () => {
             variant="transparent"
             aria-label="Toggle color scheme">
             {computedColorScheme === "dark" ? (
-              <IconSun color="orange" stroke={3.5} size={40} />
+              <PiSunDimDuotone color="orange" size={40} />
             ) : (
-              <IconMoon stroke={3.5} size={40} />
+              <PiMoonDuotone size={40} />
             )}
           </ActionIcon>
         </Stack>
