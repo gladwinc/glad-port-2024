@@ -91,17 +91,18 @@ const Projects = () => {
         )}
       </Accordion.Control>
       <Accordion.Panel>
-        <Group pl={30} pr={30}>
+        <Group justify="center" mb={10}>
           {project.link && (
-            <Indicator withBorder processing color="green" size={22}>
+            <Indicator withBorder processing color="green" size={16}>
               <Button
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 component="a"
                 variant="default"
+                color="default"
                 size="lg"
-                radius="lg"
+                radius="md"
                 leftSection={<TbBulbFilled size={23} />}>
                 View App
               </Button>
@@ -114,8 +115,9 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
               variant="default"
+              color="default"
               size="lg"
-              radius="lg"
+              radius="md"
               leftSection={<FaGithub size={23} />}>
               GitHub
             </Button>
