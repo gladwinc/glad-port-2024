@@ -19,9 +19,9 @@ import { IconSun, IconMoon } from "@tabler/icons-react";
 
 const links = [
   { link: "/", label: <FaHome size={30} /> },
-  { link: "/#projects", label: "Projects" },
-  { link: "/about", label: "About" },
-  { link: "mailto:iamgladwin@gmail.com", label: "Contact" },
+  { link: "/#projects", label: "projects" },
+  { link: "/about", label: "about" },
+  { link: "mailto:iamgladwin@gmail.com", label: "contact" },
 ];
 
 const Header = () => {
