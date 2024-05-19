@@ -9,6 +9,7 @@ import {
   Avatar,
   Group,
   Highlight,
+  Indicator,
 } from "@mantine/core";
 import { MdWavingHand, MdScience } from "react-icons/md";
 import { FaMicroscope, FaGraduationCap, FaBook } from "react-icons/fa";
@@ -75,7 +76,9 @@ const About = () => {
                 <Timeline.Item
                   fz="lg"
                   bullet={
-                    <Avatar src="/seneca_logo.png" radius="md" size={40} />
+                    <Indicator withBorder processing size={13} color="green">
+                      <Avatar src="/seneca_logo.png" radius="md" size={40} />
+                    </Indicator>
                   }
                   title={
                     <span style={{ lineHeight: "1.3" }}>
