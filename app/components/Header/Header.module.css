@@ -14,3 +14,30 @@
     background-color: var(--mantine-color-dark-7);
   }
 }
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  background-color: light-dark(var(--mantine-color-blue-4), orange);
+
+  border-radius: 50%;
+  display: none;
+}
+
+.link:hover::after {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .link:hover::after {
+    display: none;
+  }
+}

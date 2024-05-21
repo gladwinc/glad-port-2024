@@ -223,7 +223,8 @@ const About = () => {
                 <Highlight fz={18} fw={450} mb={20} highlight="Bsc.">
                   I graduated from the University of Waterloo with a Bachelor of
                   Science (BSc.) in Biomedical Sciences, then earned an Advanced
-                  Diploma in Laboratory Science at the Michener Institute.
+                  Diploma in Medical Laboratory Sciences at the Michener
+                  Institute.
                 </Highlight>
               </Group>
               <Group wrap="nowrap" align="flex-start">

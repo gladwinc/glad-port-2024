@@ -36,9 +36,10 @@ const Header = () => {
       component="a"
       href={link.link}
       key={link.label}
-      fz={"lg"}
+      fz="lg"
       fw={800}
-      onClick={close}>
+      onClick={close}
+      className={classes.link}>
       {link.label}
     </UnstyledButton>
   ));
