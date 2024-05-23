@@ -80,8 +80,16 @@ const Welcome = () => {
               Computer Programming Student
             </Text>
             <Text fz="lg" fw={500}>
-              I am a developer who likes to build web applications with
-              performance and user experience in mind.{" "}
+              I am a{" "}
+              <Text span fz="lg" fw={700}>
+                developer{" "}
+              </Text>{" "}
+              who likes to build{" "}
+              <Text span fz="lg" fw={700} fs="italic">
+                {" "}
+                web applications{" "}
+              </Text>{" "}
+              with performance and user experience in mind.{" "}
               <Anchor
                 href="/about"
                 variant="gradient"

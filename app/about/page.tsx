@@ -80,6 +80,9 @@ const About = () => {
           </div>
           <div>
             <Paper radius="lg" p={40} className={classes.paper}>
+              <Text mb={20} fz="lg" td="underline" fw={700}>
+                Education
+              </Text>
               <Timeline reverseActive lineWidth={3} bulletSize={40} fw={400}>
                 <Timeline.Item
                   fz="lg"
@@ -149,6 +152,9 @@ const About = () => {
         <div>
           <div>
             <Paper radius="lg" p={40} mb={30} className={classes.paper}>
+              <Text mb={20} fz="lg" td="underline" fw={700}>
+                Work Experience
+              </Text>
               <Timeline lineWidth={3} bulletSize={40}>
                 <Timeline.Item
                   fz="lg"
@@ -257,7 +263,7 @@ const About = () => {
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaUserGear size={20} />
+                  <FaUserGear size={19} />
                 </Avatar>
                 <Highlight fz={18} fw={450} highlight={["React", "Azure"]}>
                   During my first internship with the Government of Ontario, I

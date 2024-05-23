@@ -101,7 +101,7 @@ const Header = () => {
             size={40}
             variant="transparent"
             aria-label="Home">
-            <AiTwotoneHome color="black" size={28} />
+            <AiTwotoneHome color="#212529" size={28} />
           </ActionIcon>
           {items}
           <ActionIcon
