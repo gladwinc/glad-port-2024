@@ -60,7 +60,7 @@ const projectData = [
   {
     title: "Record Store Website",
     description:
-      "A website for a record store featuring responsive design, a music catalog filtered by genre, and a contact form. This site is powered by a backend built with Node.js and Express.",
+      "A website for a record store featuring responsive design, a genre-filtered music catalog, and a contact form. This site is powered by a backend built with Node.js and Express.",
     image: "/proj5.png",
     github: "https://github.com/gladwinc/record-store",
     link: "https://record-store-bqxx.onrender.com/",
