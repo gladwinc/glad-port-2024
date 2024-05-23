@@ -11,7 +11,7 @@ import {
   Button,
   Indicator,
 } from "@mantine/core";
-import { FaGithub, FaSpotify, FaDatabase } from "react-icons/fa";
+import { FaGithub, FaSpotify, FaDatabase, FaMusic } from "react-icons/fa";
 import { MdPointOfSale, MdMuseum } from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 import { IconArrowRight } from "@tabler/icons-react";
@@ -56,6 +56,16 @@ const projectData = [
     github: "https://github.com/gladwinc/database-tournament",
     tags: ["SQL", "Oracle", "Draw.io"],
     icon: <FaDatabase size={30} />,
+  },
+  {
+    title: "Record Store Website",
+    description:
+      "A website for a record store featuring responsive design, a music catalog filtered by genre, and a contact form. This site is powered by a backend built with Node.js and Express.",
+    image: "/proj5.png",
+    github: "https://github.com/gladwinc/record-store",
+    link: "https://record-store-bqxx.onrender.com/",
+    tags: ["Node.js", "Express.js", "HTML", "CSS", "JavaScript"],
+    icon: <FaMusic size={30} />,
   },
   {
     title: "Point-of-Sale Application",
