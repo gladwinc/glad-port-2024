@@ -15,12 +15,31 @@ import { FaGithub, FaSpotify, FaDatabase, FaMusic } from "react-icons/fa";
 import { MdPointOfSale, MdMuseum } from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 import { IconArrowRight } from "@tabler/icons-react";
+import { FaObjectUngroup } from "react-icons/fa6";
 import classes from "./Projects.module.css";
 import { Fredoka } from "next/font/google";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
 
 const projectData = [
+  {
+    title: "TensorFlow Object Detection",
+    description:
+      "Using TensorFlow.js, a machine learning library to employ object detection models.",
+    image: "/proj0.png",
+    github: "https://github.com/gladwinc/tensorflow-object-detection",
+    link: "https://tensorflow-object-detection-one.vercel.app/",
+    tags: [
+      "React",
+      "Vite",
+      "TensorFlow",
+      "MobileNet",
+      "Coco-SSD",
+      "JavaScript",
+      "Tailwind",
+    ],
+    icon: <FaObjectUngroup size={35} />,
+  },
   {
     title: "What's Playing? A Spotify Explorer",
     description:
