@@ -23,7 +23,7 @@ const fredoka = Fredoka({ subsets: ["latin"] });
 
 const projectData = [
   {
-    title: "TensorFlow Object Detection",
+    title: "Object Detection Using Pre-Trained Deep Learning Models",
     description:
       "Using TensorFlow.js, a machine learning library to employ object detection models.",
     image: "/proj0.png",
