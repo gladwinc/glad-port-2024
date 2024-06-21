@@ -25,7 +25,7 @@ const projectData = [
   {
     title: "Object Detection Using Pre-Trained Deep Learning Models",
     description:
-      "Using TensorFlow.js, a machine learning library, to deploy object detection models and provide AI-powered responses for detected objects.",
+      "Using TensorFlow.js, a machine learning library, to deploy object detection models and provide AI-generated insights.",
     image: "/proj0.png",
     github: "https://github.com/gladwinc/tensorflow-object-detection",
     link: "https://tensorflow-object-detection-one.vercel.app/",
@@ -37,6 +37,7 @@ const projectData = [
       "Coco-SSD",
       "JavaScript",
       "Tailwind",
+      "LLM Integration",
       "Groq AI",
     ],
     icon: <FaObjectUngroup size={35} />,
