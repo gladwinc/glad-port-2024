@@ -61,44 +61,41 @@ const Welcome = () => {
         </Text>
       </Group>
 
-      <Center>
-        <Group mt={30}>
-          <Button
-            component="a"
-            href="https://www.linkedin.com/in/gladwinchan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="light"
-            size="xl"
-            radius="xl"
-            leftSection={<FaLinkedin />}>
-            LinkedIn
-          </Button>
-          <Button
-            component="a"
-            href="https://github.com/gladwinc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="light"
-            size="xl"
-            radius="xl"
-            leftSection={<FaGithub />}>
-            GitHub
-          </Button>
-          <Button
-            component="a"
-            href="mailto:iamgladwin@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="light"
-            size="xl"
-            radius="xl"
-            leftSection={<FaPaperPlane />}>
-            Email
-          </Button>
-        </Group>
-      </Center>
-      <Center></Center>
+      <Group justify="center" mt={30}>
+        <Button
+          component="a"
+          href="https://www.linkedin.com/in/gladwinchan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="light"
+          size="xl"
+          radius="xl"
+          leftSection={<FaLinkedin />}>
+          LinkedIn
+        </Button>
+        <Button
+          component="a"
+          href="https://github.com/gladwinc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="light"
+          size="xl"
+          radius="xl"
+          leftSection={<FaGithub />}>
+          GitHub
+        </Button>
+        <Button
+          component="a"
+          href="mailto:iamgladwin@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="light"
+          size="xl"
+          radius="xl"
+          leftSection={<FaPaperPlane />}>
+          Email
+        </Button>
+      </Group>
     </Container>
   );
 };
