@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Container,
   Badge,
@@ -12,13 +14,12 @@ import {
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { Fredoka } from "next/font/google";
-import classes from "./Welcome.module.css";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
 
 const Welcome = () => {
   return (
-    <Container mt={120}>
+    <Container size="sm" mt={120}>
       <Center>
         <Indicator inline withBorder processing label="2024" fw={700} size={25}>
           <Badge variant="light" color="teal" size="xl">
@@ -30,41 +31,69 @@ const Welcome = () => {
         ta="center"
         fw={700}
         size="75px"
-        mt={50}
+        mt={30}
         style={{ fontFamily: fredoka.style.fontFamily }}>
-        <span className={classes.name}>Gladwin Chan</span>
+        Gladwin Chan
       </Text>
-      <Group justify="center" mt={50}>
-        <Button
-          component="a"
-          href="https://www.linkedin.com/in/gladwinchan/"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="light"
-          size="xl"
-          radius="xl"
-          leftSection={<FaLinkedin />}>
-          LinkedIn
-        </Button>
-        <Button
-          component="a"
-          href="https://github.com/gladwinc/"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="light"
-          size="xl"
-          radius="xl"
-          leftSection={<FaGithub />}>
-          GitHub
-        </Button>
+
+      <Group wrap="nowrap" align="center" justify="center">
+        <Avatar size={120} mt={30} src="/glad3.png" />
+        <Text size="lg" fw={450} mt={30}>
+          As a{" "}
+          <Text span fz="lg" fw={700}>
+            {" "}
+            web developer
+          </Text>
+          , I specialize in creating{" "}
+          <Text span fz="lg" fw={700} fs="italic">
+            web experiences{" "}
+          </Text>{" "}
+          that are both performant and user-friendly. I build applications that
+          leverage the latest web technologies to deliver exceptional user
+          experiences.{" "}
+          <Anchor
+            href="/about"
+            variant="gradient"
+            gradient={{ from: "#07c8f9", to: "#0d41e1" }}
+            fz="lg"
+            fw={600}>
+            More about me...
+          </Anchor>
+        </Text>
       </Group>
+
+      <Center>
+        <Group mt={30}>
+          <Button
+            component="a"
+            href="https://www.linkedin.com/in/gladwinchan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="light"
+            size="xl"
+            radius="xl"
+            leftSection={<FaLinkedin />}>
+            LinkedIn
+          </Button>
+          <Button
+            component="a"
+            href="https://github.com/gladwinc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="light"
+            size="xl"
+            radius="xl"
+            leftSection={<FaGithub />}>
+            GitHub
+          </Button>
+        </Group>
+      </Center>
       <Center>
         <Button
           component="a"
           href="mailto:iamgladwin@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          fullWidth
           variant="transparent"
           mt={15}
           fz="xl"
@@ -72,36 +101,7 @@ const Welcome = () => {
           Send me a message!
         </Button>
       </Center>
-      <Container size="xs">
-        <Group wrap="nowrap" justify="center" mt={50}>
-          <Avatar radius="lg" size="xxl" src="/glad3.png" />
-          <div>
-            <Text tt="uppercase" fz="md" fw={700} c="dimmed" mb={9}>
-              Computer Programming Student
-            </Text>
-            <Text fz="lg" fw={500}>
-              I am a{" "}
-              <Text span fz="lg" fw={700}>
-                developer{" "}
-              </Text>{" "}
-              who likes to build{" "}
-              <Text span fz="lg" fw={700} fs="italic">
-                {" "}
-                web applications{" "}
-              </Text>{" "}
-              with performance and user experience in mind.{" "}
-              <Anchor
-                href="/about"
-                variant="gradient"
-                gradient={{ from: "#07c8f9", to: "#0d41e1" }}
-                fz="lg"
-                fw={600}>
-                More about me...
-              </Anchor>
-            </Text>
-          </div>
-        </Group>
-      </Container>
+      {/* <Grid.Col span={{ base: 12, sm: 6 }}></Grid.Col> */}
     </Container>
   );
 };

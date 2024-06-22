@@ -162,7 +162,7 @@ const Projects = () => {
   ));
 
   return (
-    <Container size="md" mb={60} pt={100} id="projects">
+    <Container size="md" mb={60} pt={70} id="projects">
       <Paper radius="xl" p={40} mb={15}>
         <Text ta="center" fw={700} size="50px">
           <span
@@ -172,7 +172,7 @@ const Projects = () => {
           </span>
         </Text>
       </Paper>
-      <Accordion variant="separated" radius="xl">
+      <Accordion chevronPosition="left" variant="separated" radius="xl">
         {projects}
       </Accordion>
       <Button
