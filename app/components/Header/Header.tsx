@@ -19,9 +19,9 @@ import { PiSunDimDuotone, PiMoonDuotone } from "react-icons/pi";
 
 const links = [
   /*   { link: "/", label: <AiTwotoneHome size={27} /> },
-   */ { link: "/#projects", label: "projects" },
-  { link: "/about", label: "about" },
-  { link: "mailto:iamgladwin@gmail.com", label: "contact" },
+   */ { link: "/#projects", label: "Projects" },
+  { link: "/about", label: "About" },
+  { link: "mailto:iamgladwin@gmail.com", label: "Contact" },
 ];
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
       component="a"
       href={link.link}
       key={link.label}
-      fz="md"
+      fz="xl"
       fw={800}
       onClick={close}
       className={classes.link}>
@@ -101,7 +101,7 @@ const Header = () => {
             size={40}
             variant="transparent"
             aria-label="Home">
-            <AiTwotoneHome color="#212529" size={22} />
+            <AiTwotoneHome color="#212529" size={30} />
           </ActionIcon>
           {items}
           <ActionIcon
@@ -114,7 +114,7 @@ const Header = () => {
             {computedColorScheme === "dark" ? (
               <PiSunDimDuotone strokeWidth={2} color="orange" size={30} />
             ) : (
-              <PiMoonDuotone strokeWidth={2} size={22} />
+              <PiMoonDuotone strokeWidth={2} size={30} />
             )}
           </ActionIcon>
         </Group>

@@ -11,8 +11,7 @@ import {
   Avatar,
   Anchor,
 } from "@mantine/core";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { MdAlternateEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
 import { Fredoka } from "next/font/google";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
@@ -86,22 +85,20 @@ const Welcome = () => {
             leftSection={<FaGithub />}>
             GitHub
           </Button>
+          <Button
+            component="a"
+            href="mailto:iamgladwin@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="light"
+            size="xl"
+            radius="xl"
+            leftSection={<FaPaperPlane />}>
+            Email
+          </Button>
         </Group>
       </Center>
-      <Center>
-        <Button
-          component="a"
-          href="mailto:iamgladwin@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="transparent"
-          mt={15}
-          fz="xl"
-          leftSection={<MdAlternateEmail />}>
-          Send me a message!
-        </Button>
-      </Center>
-      {/* <Grid.Col span={{ base: 12, sm: 6 }}></Grid.Col> */}
+      <Center></Center>
     </Container>
   );
 };
