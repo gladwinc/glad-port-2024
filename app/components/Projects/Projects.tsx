@@ -73,6 +73,7 @@ const projectData = [
     title: "Database Design for Sports Tournaments",
     description:
       "This SQL-based Database Management System (DBMS) project is designed for managing sports tournaments. It features an Entity-Relationship Diagram (ERD) to visualize the relationships between entities, and a SQL script to create and populate the database. This design has been validated with 100+ rows of data, and is ready to be used by tournament organizers.",
+    image: "/proj3.png",
     github: "https://github.com/gladwinc/database-tournament",
     tags: ["SQL", "Oracle", "Draw.io"],
     icon: <FaDatabase size={30} />,
