@@ -23,9 +23,9 @@ const fredoka = Fredoka({ subsets: ["latin"] });
 
 const projectData = [
   {
-    title: "Object Detection Using Pre-Trained Deep Learning Models",
+    title: "Object Detection Using Pre-Trained Machine Learning Models",
     description:
-      "Using TensorFlow.js, a machine learning library, to deploy object detection models and provide AI-generated insights.",
+      "A web application that leverages pre-trained machine learning models to detect objects in images. It utilizes the React framework, Vite for efficient development, TensorFlow for machine learning, and Groq for AI-generated insights.",
     image: "/proj0.png",
     github: "https://github.com/gladwinc/tensorflow-object-detection",
     link: "https://tensorflow-object-detection-one.vercel.app/",
@@ -43,9 +43,9 @@ const projectData = [
     icon: <FaObjectUngroup size={35} />,
   },
   {
-    title: "What's Playing? A Spotify Explorer",
+    title: "Spotify Explorer: Uncover Your Listening History",
     description:
-      "A web application that allows you to explore your Spotify listening history, including your top artists and tracks.",
+      "This web application allows users to explore their Spotify listening history over three time periods: 1 month, 6 months, and 1 year. Users can copy and share their listening history easily. The app integrates with the Spotify API to provide personalized insights into top artists and tracks.",
     image: "/proj1.png",
     github: "https://github.com/gladwinc/spotifyappv1",
     link: "https://spotifyappv1.vercel.app/login",
@@ -60,9 +60,9 @@ const projectData = [
     icon: <FaSpotify size={35} />,
   },
   {
-    title: "MET Museum Explorer",
+    title: "MET Museum Explorer: Explore Art Collections Online",
     description:
-      "A Next.js web application that allows you to explore the MET Museum's collection of art.",
+      "A Next.js web application that allows you to explore the MET Museum's extensive art collection. It features advanced search capabilities, session history tracking, and the ability to save your favourites for easy access.",
     image: "/proj2.png",
     github: "https://github.com/gladwinc/MET_Explorer",
     link: "https://met-explorer-lilac.vercel.app/",
@@ -70,10 +70,9 @@ const projectData = [
     icon: <MdMuseum size={35} />,
   },
   {
-    title: "Sports Tournament Database",
+    title: "Database Design for Sports Tournaments",
     description:
-      "An SQL-based DBMS designed for managing sports tournaments. This project includes ERD design, data modeling, and SQL schema.",
-    image: "/proj3.png",
+      "This SQL-based Database Management System (DBMS) project is designed for managing sports tournaments. It features an Entity-Relationship Diagram (ERD) to visualize the relationships between entities, and a SQL script to create and populate the database. This design has been validated with 100+ rows of data, and is ready to be used by tournament organizers.",
     github: "https://github.com/gladwinc/database-tournament",
     tags: ["SQL", "Oracle", "Draw.io"],
     icon: <FaDatabase size={30} />,
@@ -81,7 +80,7 @@ const projectData = [
   {
     title: "Record Store Website",
     description:
-      "A website for a record store featuring responsive design, a genre-filtered music catalog, and a contact form. This site is powered by a backend built with Node.js and Express.",
+      "A website for a record store with responsive design, genre-filtered music catalog, and a contact form. Backend powered by Node.js and Express.js.",
     image: "/proj5.png",
     github: "https://github.com/gladwinc/record-store",
     link: "https://record-store-bqxx.onrender.com/",
