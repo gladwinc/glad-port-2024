@@ -173,7 +173,7 @@ const Projects = () => {
           </span>
         </Text>
       </Paper>
-      <Accordion chevronPosition="left" variant="separated" radius="xl">
+      <Accordion chevronPosition="right" variant="separated" radius="xl">
         {projects}
       </Accordion>
       <Button
