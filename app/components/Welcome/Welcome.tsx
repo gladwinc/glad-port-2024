@@ -36,7 +36,7 @@ const Welcome = () => {
         Gladwin Chan
       </Text>
 
-      <Group wrap="nowrap" align="center" justify="center">
+      <Group wrap="nowrap" align="flex-start">
         <Avatar size={120} mt={30} src="/glad3.png" />
         <Text size="lg" fw={450} mt={30}>
           As a{" "}
