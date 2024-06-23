@@ -101,7 +101,7 @@ const Header = () => {
             size={40}
             variant="transparent"
             aria-label="Home">
-            <AiTwotoneHome color="#212529" size={30} />
+            <AiTwotoneHome color="#212529" strokeWidth={10} size={30} />
           </ActionIcon>
           {items}
           <ActionIcon
@@ -112,9 +112,9 @@ const Header = () => {
             variant="transparent"
             aria-label="Toggle color scheme">
             {computedColorScheme === "dark" ? (
-              <PiSunDimDuotone strokeWidth={2} color="orange" size={30} />
+              <PiSunDimDuotone strokeWidth={8} color="orange" size={30} />
             ) : (
-              <PiMoonDuotone strokeWidth={2} size={30} />
+              <PiMoonDuotone strokeWidth={8} size={30} />
             )}
           </ActionIcon>
         </Group>

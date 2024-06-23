@@ -12,6 +12,7 @@ import {
   Anchor,
 } from "@mantine/core";
 import { FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { Fredoka } from "next/font/google";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
@@ -38,25 +39,32 @@ const Welcome = () => {
       <Group wrap="nowrap" align="flex-start">
         <Avatar size={120} mt={30} src="/glad3.png" />
         <Text size="lg" fw={450} mt={30}>
-          As a{" "}
-          <Text span fz="lg" fw={700}>
-            {" "}
-            web developer
-          </Text>
-          , I specialize in creating{" "}
-          <Text span fz="lg" fw={700} fs="italic">
-            web experiences{" "}
+          I am a{" "}
+          <Text span fw={700}>
+            software developer
           </Text>{" "}
-          that are both performant and user-friendly. I build applications that
-          leverage the latest web technologies to deliver exceptional user
-          experiences.{" "}
+          who specializes in creating{" "}
+          <Text span fw={700}>
+            {" "}
+            web experiences
+          </Text>{" "}
+          that are both performant and user-friendly. I build applications
+          leveraging the latest web technologies to deliver exceptional{" "}
+          <Text span fw={700}>
+            user experiences
+          </Text>
+          .{" "}
           <Anchor
             href="/about"
             variant="gradient"
             gradient={{ from: "#07c8f9", to: "#0d41e1" }}
             fz="lg"
-            fw={600}>
-            More about me...
+            fw={700}>
+            More about me{" "}
+            <IoIosArrowDroprightCircle
+              size={22}
+              style={{ position: "relative", top: "4.5px" }}
+            />
           </Anchor>
         </Text>
       </Group>
