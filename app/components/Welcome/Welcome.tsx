@@ -20,8 +20,8 @@ const Welcome = () => {
   return (
     <Container size="sm" mt={120}>
       <Center>
-        <Indicator inline withBorder processing label="2024" fw={700} size={25}>
-          <Badge variant="light" color="teal" size="xl">
+        <Indicator inline withBorder processing label="2024" fw={700} size={30}>
+          <Badge variant="light" color="teal" size="xl" p={20}>
             Looking for Internship
           </Badge>
         </Indicator>
