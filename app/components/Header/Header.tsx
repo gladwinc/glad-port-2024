@@ -21,7 +21,14 @@ import { PiSunDimDuotone, PiMoonDuotone } from "react-icons/pi";
 const links = [
   {
     link: "/",
-    label: <AiTwotoneHome color="#212529" size={32} strokeWidth={15} />,
+    label: (
+      <AiTwotoneHome
+        className={classes.homeIcon}
+        color="#212529"
+        size={32}
+        strokeWidth={15}
+      />
+    ),
     key: "home",
   },
   { link: "/#projects", label: "Projects", key: "projects" },
@@ -87,15 +94,15 @@ const Header = () => {
                 variant="transparent"
                 aria-label="Toggle color scheme">
                 {computedColorScheme === "dark" ? (
-                  <PiSunDimDuotone strokeWidth={2} color="orange" size={40} />
+                  <PiSunDimDuotone strokeWidth={8} color="orange" size={40} />
                 ) : (
-                  <PiMoonDuotone strokeWidth={2} size={40} />
+                  <PiMoonDuotone strokeWidth={8} size={40} />
                 )}
               </ActionIcon>
             </Stack>
           </Drawer>
         </Group>
-        <Group gap={40} justify="center" visibleFrom="xs">
+        <Group gap={42} justify="center" visibleFrom="xs">
           {items}
           <ActionIcon
             size={33}
