@@ -32,7 +32,7 @@ const links = [
     key: "home",
   },
   { link: "/#projects", label: "Projects", key: "projects" },
-  { link: "/about", label: "About" },
+  { link: "/about", label: "About", key: "about" },
   { link: "mailto:iamgladwin@gmail.com", label: "Contact", key: "contact" },
 ];
 
@@ -86,6 +86,7 @@ const Header = () => {
             <Stack pl={10} mt={50}>
               {items}
               <ActionIcon
+                size={33}
                 onClick={() =>
                   setColorScheme(
                     computedColorScheme === "light" ? "dark" : "light"
@@ -94,9 +95,9 @@ const Header = () => {
                 variant="transparent"
                 aria-label="Toggle color scheme">
                 {computedColorScheme === "dark" ? (
-                  <PiSunDimDuotone strokeWidth={8} color="orange" size={40} />
+                  <PiSunDimDuotone strokeWidth={8} color="orange" size={35} />
                 ) : (
-                  <PiMoonDuotone strokeWidth={8} size={40} />
+                  <PiMoonDuotone strokeWidth={8} size={35} />
                 )}
               </ActionIcon>
             </Stack>
@@ -112,9 +113,9 @@ const Header = () => {
             variant="transparent"
             aria-label="Toggle color scheme">
             {computedColorScheme === "dark" ? (
-              <PiSunDimDuotone strokeWidth={8} color="orange" size={30} />
+              <PiSunDimDuotone strokeWidth={8} color="orange" size={35} />
             ) : (
-              <PiMoonDuotone strokeWidth={8} size={30} />
+              <PiMoonDuotone strokeWidth={8} size={35} />
             )}
           </ActionIcon>
         </Group>
