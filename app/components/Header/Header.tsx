@@ -22,10 +22,11 @@ const links = [
   {
     link: "/",
     label: <AiTwotoneHome color="#212529" size={32} strokeWidth={15} />,
+    key: "home",
   },
-  { link: "/#projects", label: "Projects" },
+  { link: "/#projects", label: "Projects", key: "projects" },
   { link: "/about", label: "About" },
-  { link: "mailto:iamgladwin@gmail.com", label: "Contact" },
+  { link: "mailto:iamgladwin@gmail.com", label: "Contact", key: "contact" },
 ];
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
     <UnstyledButton
       component={Link}
       href={link.link}
-      key={link.label}
+      key={link.key}
       fz="xl"
       fw={800}
       onClick={close}
