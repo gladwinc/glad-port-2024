@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import {
   UnstyledButton,
   Group,
@@ -18,8 +19,11 @@ import { AiTwotoneHome } from "react-icons/ai";
 import { PiSunDimDuotone, PiMoonDuotone } from "react-icons/pi";
 
 const links = [
-  /*   { link: "/", label: <AiTwotoneHome size={27} /> },
-   */ { link: "/#projects", label: "Projects" },
+  {
+    link: "/",
+    label: <AiTwotoneHome color="#212529" size={32} strokeWidth={15} />,
+  },
+  { link: "/#projects", label: "Projects" },
   { link: "/about", label: "About" },
   { link: "mailto:iamgladwin@gmail.com", label: "Contact" },
 ];
@@ -33,7 +37,7 @@ const Header = () => {
 
   const items = links.map((link) => (
     <UnstyledButton
-      component="a"
+      component={Link}
       href={link.link}
       key={link.label}
       fz="xl"
@@ -45,9 +49,6 @@ const Header = () => {
   ));
 
   const [isHovered, setIsHovered] = useState(false);
-  const handleImageClick = () => {
-    window.location.href = "/";
-  };
 
   return (
     <header className={classes.header}>
@@ -58,7 +59,6 @@ const Header = () => {
             h={56}
             alt="Gladwin"
             hiddenFrom="xs"
-            onClick={handleImageClick}
             style={{
               cursor: "pointer",
               transition: "transform 250ms",
@@ -95,14 +95,6 @@ const Header = () => {
           </Drawer>
         </Group>
         <Group gap={40} justify="center" visibleFrom="xs">
-          <ActionIcon
-            component="a"
-            href="/"
-            size={40}
-            variant="transparent"
-            aria-label="Home">
-            <AiTwotoneHome color="#212529" strokeWidth={10} size={30} />
-          </ActionIcon>
           {items}
           <ActionIcon
             size={33}

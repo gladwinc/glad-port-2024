@@ -11,6 +11,7 @@ import {
   Avatar,
   Anchor,
 } from "@mantine/core";
+import Link from "next/link";
 import { FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { Fredoka } from "next/font/google";
@@ -55,6 +56,7 @@ const Welcome = () => {
           </Text>
           .{" "}
           <Anchor
+            component={Link}
             href="/about"
             variant="gradient"
             gradient={{ from: "#07c8f9", to: "#0d41e1" }}
