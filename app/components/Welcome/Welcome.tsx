@@ -24,7 +24,7 @@ const Welcome = () => {
       <Center>
         <Indicator inline withBorder processing label="2024" fw={700} size={30}>
           <Badge variant="light" color="teal" size="xl" p={20}>
-            Looking for Internship
+            Open To Networking
           </Badge>
         </Indicator>
       </Center>

@@ -11,9 +11,10 @@ import {
   Highlight,
   Indicator,
 } from "@mantine/core";
-import { MdWavingHand, MdScience } from "react-icons/md";
+import { MdWavingHand } from "react-icons/md";
 import { FaMicroscope, FaGraduationCap, FaSchool } from "react-icons/fa";
 import { FaUserGear, FaBookOpenReader } from "react-icons/fa6";
+import { PiCodeFill } from "react-icons/pi";
 import classes from "./About.module.css";
 import { Fredoka } from "next/font/google";
 
@@ -50,7 +51,7 @@ const About = () => {
                   fw={450}
                   mb={20}
                   highlight="Hello, I'm Gladwin">
-                  Hello, I'm Gladwin, a computer programming & analysis student.
+                  Hello, I'm Gladwin, a software developer based in Toronto.
                 </Highlight>
               </Group>
               <Group wrap="nowrap" align="flex-start">
@@ -61,20 +62,25 @@ const About = () => {
                   fz={18}
                   fw={450}
                   mb={20}
-                  highlight="medical laboratory technologist.">
+                  highlight="medical laboratory technologist">
                   I come from a healthcare background, working as a medical
-                  laboratory technologist.
+                  laboratory technologist performing lab tests and specialized
+                  procedures for measles, COVID-19, Bartonella, Blastomyces, and
+                  more.
                 </Highlight>
               </Group>
               <Group wrap="nowrap" align="flex-start">
                 <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <MdScience size={23} />
+                  <PiCodeFill size={23} />
                 </Avatar>
-                <Text fz={18} fw={450}>
-                  I perform lab testing, including routine blood tests, and
-                  specialized procedures for measles, COVID-19, Bartonella,
-                  Blastomyces and much more.
-                </Text>
+                <Highlight
+                  fz={18}
+                  fw={450}
+                  highlight={"Junior Systems Developer"}>
+                  I am currently working as a Junior Systems Developer,
+                  utilizing AWS to support legacy systems migration and
+                  developing interactive maps for data visualization.
+                </Highlight>
               </Group>
             </Paper>
           </div>
@@ -104,7 +110,7 @@ const About = () => {
                     North York, ON
                   </Text>
                   <Text size="md" fw={450} mt={4}>
-                    2022 - Present
+                    2022 - 2024
                   </Text>
                 </Timeline.Item>
                 <Timeline.Item
@@ -158,6 +164,28 @@ const About = () => {
               <Timeline lineWidth={3} bulletSize={40}>
                 <Timeline.Item
                   fz="lg"
+                  bullet={
+                    <Indicator withBorder processing size={13} color="green">
+                      <Avatar src="/mpac_logo.png" radius="sm" size={40} />{" "}
+                    </Indicator>
+                  }
+                  title={
+                    <span style={{ lineHeight: "1.3" }}>
+                      Junior Systems Developer
+                    </span>
+                  }>
+                  <Text size="lg" lh={1.2} fw={400}>
+                    Municipal Property Assessment Corporation (MPAC)
+                  </Text>
+                  <Text c="dimmed" size="md" fw={450}>
+                    Pickering, ON
+                  </Text>
+                  <Text size="md" mt={4} fw={450}>
+                    2024 - Present
+                  </Text>
+                </Timeline.Item>
+                <Timeline.Item
+                  fz="lg"
                   bullet={<Avatar src="/gov_logo.png" radius="sm" size={40} />}
                   title={
                     <span style={{ lineHeight: "1.3" }}>
@@ -207,69 +235,33 @@ const About = () => {
                     Vaughan, ON
                   </Text>
                   <Text size="md" mt={4} fw={450}>
-                    2019 - Present
+                    2019 - 2024
                   </Text>
                 </Timeline.Item>
               </Timeline>
             </Paper>
           </div>
           <div>
-            <Paper radius="lg" p={40} className={classes.paper}>
-              <Highlight
-                mb={20}
-                fw={700}
-                fz="lg"
-                highlight="From healthcare to computer programming.">
-                From healthcare to computer programming.
-              </Highlight>
+            <Paper radius="lg" p={40} mb={30} className={classes.paper}>
+              <Text mb={20} fz="lg" td="underline" fw={700}>
+                Certifications
+              </Text>
               <Group wrap="nowrap" align="flex-start">
-                <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaGraduationCap size={21} />
-                </Avatar>
-                <Highlight fz={18} fw={450} mb={20} highlight="Bsc.">
-                  I graduated from the University of Waterloo with a Bachelor of
-                  Science (BSc.) in Biomedical Sciences, then earned an Advanced
-                  Diploma in Medical Laboratory Sciences at the Michener
-                  Institute.
-                </Highlight>
-              </Group>
-              <Group wrap="nowrap" align="flex-start">
-                <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaSchool size={18} />
-                </Avatar>
-                <Highlight
-                  fz={18}
-                  fw={450}
-                  mb={20}
-                  highlight="Computer Programming and Analysis">
-                  I am now continuing my education at Seneca Polytechnic for
-                  Computer Programming and Analysis.
-                </Highlight>
-              </Group>
-              <Group wrap="nowrap" align="flex-start">
-                <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaBookOpenReader size={17} />
-                </Avatar>
-                <Highlight
-                  span
-                  fz={18}
-                  fw={450}
-                  mb={20}
-                  highlight="C/C++, Python, Java, JavaScript, SQL/NoSQL databases, data structures, and algorithms">
-                  My coursework covers a wide range of languages and
-                  technologies, including C/C++, Python, Java, JavaScript,
-                  SQL/NoSQL databases, data structures, and algorithms.
-                </Highlight>
-              </Group>
-              <Group wrap="nowrap" align="flex-start">
-                <Avatar variant="default" radius="md" size={45} mr={10}>
-                  <FaUserGear size={19} />
-                </Avatar>
-                <Highlight fz={18} fw={450} highlight={["React", "Azure"]}>
-                  During my first internship with the Government of Ontario, I
-                  enhanced their client portal site using React and gained
-                  experience with emerging technologies such as Azure.
-                </Highlight>
+                <Avatar src="/microsoft_logo.png" radius="md" size={40} />
+                <div>
+                  <Text fz={18} fw={500}>
+                    Microsoft Azure Fundamentals
+                  </Text>
+                  <Text size="lg" fw={400}>
+                    Microsoft
+                  </Text>
+                  <Text c="dimmed" size="md" fw={450}>
+                    Credential ID A08411DC245203C4
+                  </Text>
+                  <Text size="md" mt={4} fw={450}>
+                    Issued September 2024
+                  </Text>
+                </div>
               </Group>
             </Paper>
           </div>
